@@ -1,66 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed Burguer</title>
+        <title>Speed Burguer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="hero">
+    <header>
         <div class="container">
-            <h1>Speed Burguer</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="header-content" style="display: flex; justify-content: space-between; align-items: center;">
+            
+                <a class="margin-botton-logo" style="margin-top: 20px;" href="#">
+                    <img style="height: 130px; width: 250px; border-radius: 15px;" src="speed-burguer-icon-logo.jpg" />
+                </a>
+            
+                <nav class="mt-5">
+                    <ul class="flex space-x-10 text-lg tracking-[0.25em] text-white" style="font-family: 'Bebas Neue', sans-serif;">
+                        <li><a href="#about" class="hover:text-yellow-400 transition duration-300">Sobre</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5531986897046" target="_blank" class="hover:text-yellow-400 transition duration-300">Pedido</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     
-    <section>
+    <section class="hero">
         <div class="container">
-            <h2>Os Melhores Hambúrgueres da Noite</h2>
-            <p>Aberto todas as noites das 18h às 2h</p>
-            <a href="#menu" class="btn">Veja nosso Menu</a>
+            <h2>Os Melhores Hambúrgueres e Pizzas da Noite</h2>
+            <p>⏰ Funcionamos todos os dias de 18:00 as 00:00</p>
+            <a href="https://api.whatsapp.com/send?phone=5531991422660" target="_blank" rel="noopener noreferrer">
+                <button class="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-yellow-500 hover:to-red-500 text-white font-bold text-2xl py-4 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300">
+                    ⭐ Fazer Pedido ⭐
+                </button>
+            </a>
+            <br/>
+            <br/>
+            <a href="https://api.whatsapp.com/send?phone=5531991422660" target="_blank">
+               <i class="fa-brands fa-whatsapp" style="font-size: 75px; color: green;"></i>
+            </a>
+            <br/>
+            <br/>
+            <a href="https://www.instagram.com/speedburguer_pizzas" target="_blank">
+                <i style="font-size: 75px;" class="fa-brands fa-instagram bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 text-transparent bg-clip-text inline-block"></i>
+            </a>
+            <br/>
+
         </div>
+        
     </section>
 
     <section id="about">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Na Speed Burguer, nós acreditamos que a noite é o melhor momento para saborear um hambúrguer delicioso. Estamos abertos todas as noites para trazer a você os melhores hambúrgueres feitos com ingredientes frescos e de alta qualidade.</p>
+            <p>🍔🍕 Speed Burguer – O Sabor da Noite! 🌙
+
+                Nada combina melhor com a noite do que um hambúrguer suculento ou uma pizza irresistível! No Speed Burguer, estamos sempre prontos para matar sua fome com os melhores sabores, preparados com ingredientes frescos e de alta qualidade.
+                
+                Aberto todas as noites, oferecemos hambúrgueres artesanais e pizzas deliciosas, feitos com carinho para transformar cada mordida em uma experiência única.
+                
+                🚀 Peça agora e aproveite o melhor da noite com a gente!</p>
         </div>
     </section>
 
-    <section id="menu">
-        <div class="container">
-            <h2>Nosso Menu</h2>
-            <ul>
-                <li>
-                    <h3>Speed Classic</h3>
-                    <p>Pão, Carne, Alface, Tomate, Queijo, Molho Especial</p>
-                </li>
-                <li>
-                    <h3>Speed Bacon</h3>
-                    <p>Pão, Carne, Bacon, Queijo Cheddar, Molho Barbecue</p>
-                </li>
-                <li>
-                    <h3>Speed Veggie</h3>
-                    <p>Pão Integral, Hambúrguer de Grão-de-Bico, Alface, Tomate, Molho de Iogurte</p>
-                </li>
-            </ul>
+    <section id="menu" class="flex justify-center items-center py-10">
+        <a href="https://api.whatsapp.com/send?phone=5531991422660" target="_blank" rel="noopener noreferrer">
+            <button class="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-yellow-500 hover:to-red-500 text-white font-bold text-2xl py-4 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300 blink-animation">
+                ⭐ Fazer Pedido ⭐
+            </button>
+        </a>
+    </section>
+
+    <section id="gallery" class="py-10">
+        <div class="container mx-auto text-center">
+            <h2>Nosso Sabor em Imagens</h2>
+            <div class="relative w-full max-w-lg mx-auto">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+                        <img src="carrossel01.jpg" class="w-full h-84 object-cover">
+                        <img src="carrossel02.jpg" class="w-full h-84 object-cover">
+                        <img src="carrossel03.jpg" class="w-full h-84 object-cover">
+                    </div>
+                </div>
+                <div class="flex justify-between absolute top-1/2 w-full px-4">
+                    <button onclick="prevSlide()" class="bg-black bg-opacity-50 text-white p-2 rounded-full">
+                        &#10094;
+                    </button>
+                    <button onclick="nextSlide()" class="bg-black bg-opacity-50 text-white p-2 rounded-full">
+                        &#10095;
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contato</h2>
-            <p>Endereço: Rua dos Hambúrgueres, 123, Centro</p>
-            <p>Telefone: (11) 98765-4321</p>
-            <p>Email: contato@speedburguer.com</p>
+            <p class="mt-2">R. São Cirineu, n°30 - Ouro Minas, Belo Horizonte</p>
+            <br/>
+            <a class="mb-12" style="color:rgb(31, 31, 160); padding:5px; text-decoration: none;font-size:18px;" href="https://api.whatsapp.com/send?phone=5531991422660" target="_blank"><i class="fa-brands fa-whatsapp" style="font-size: 24px; color: green;"></i>(31)99142-2660</a>
+            <br/>
+            <a class="mt-6" style="padding:5px; text-decoration: none; font-size:18px;" href="https://www.instagram.com/speedburguer_pizzas" target="_blank">
+                <i class="fa-brands fa-instagram text-3xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 text-transparent bg-clip-text"></i> @speedburguer_pizzas
+            </a>
         </div>
     </section>
 
@@ -69,5 +116,17 @@
             <p>&copy; 2025 Speed Burguer. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        let index = 0;
+        function showSlide(i) {
+            const carousel = document.getElementById("carousel");
+            const slides = document.querySelectorAll("#carousel img");
+            index = (i + slides.length) % slides.length;
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+        function prevSlide() { showSlide(index - 1); }
+        function nextSlide() { showSlide(index + 1); }
+    </script>
 </body>
 </html>
